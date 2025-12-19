@@ -32,6 +32,7 @@ A slot machine that displays numbers on a LED Dot Matrix in a slot machine style
 ## The Code
 1) In the same folder that you have the venv package, make a python script in the terminal by inputting ```touch slot.py``` or something similar. The only thing that is absolitely needed is that its a python file.
 2) Copy and paste the following code into the file using an editor or the nano tool. All notes on the workings of the code should be in the comments:
+<summary>Click to expand code</summary>
 ```
 # IMPORT ALL MY STUFF
 import RPi.GPIO as GPIO
