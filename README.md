@@ -14,8 +14,8 @@ A slot machine that displays numbers on a LED Dot Matrix in a slot machine style
 1) With jumper wires, Dot Matrix, and your Pi; connect wires to the following:
    - VCC to 5V
    - GND to Ground
-   - DIN to
-   -  to MOSI
+   - DIN to MOSI
+   - CS to CEO
    - CLK to SCLK
 2) With jumper wires, digital button, and the Pi; connect wires to the following:
    - V to 5v
