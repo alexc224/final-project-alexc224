@@ -33,7 +33,7 @@ My final project was a makeshift slot machine that displays numbers on a LED Dot
 2) After installing ```venv```, create a virtual enviorment in the folder with ```python3 -m venv venv```. This should create a folder inside of your folder/directory.
 3) To activate the virtual enviorment run the command ```source venv/bin/activate```. REMEMBER: you need to be in the same directory that you activated the virutal enviorment in.
 4) In the virtual enviorment, install the latest version of the ```luma.led_matrix``` package with ```sudo python3 -m pip install --upgrade luma.led_matrix```
-5) Make sure you have the SPI configured with ```ls -l /dev/spi*``` and it should reply with ```/dev/spidev0.0  /dev/spidev0.1```. If it is not showing that, consult [https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial#spi-on-pi](url) to configure the SPI.
+5) Make sure you have the SPI configured with ```ls -l /dev/spi*``` and it should reply with ```/dev/spidev0.0  /dev/spidev0.1```. If it is not showing that, consult [this Sparkfun tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial#spi-on-pi) to configure the SPI.
 
 ## 💻 The Code
 1) In the same folder that you have the venv package installed, make a python script in the terminal by inputting ```touch slot.py```. You may change the name of the python file, the only thing that is necessary is that you have a python file.
