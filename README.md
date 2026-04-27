@@ -39,7 +39,7 @@ My final project was a makeshift slot machine that displays numbers on a LED Dot
 1) In the same folder that you have the venv package installed, make a python script in the terminal by inputting ```touch slot.py```. You may change the name of the python file, the only thing that is necessary is that you have a python file.
 2) Copy and paste the following code into the file using an editor(such as VsCode or Geany) or the nano tool in the terminal. All notes on the workings of the code should be in the comments:
 
-```
+```python
 # IMPORT ALL OF THESE
 import RPi.GPIO as GPIO
 import random
