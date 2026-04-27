@@ -1,22 +1,22 @@
 <a name="top"></a>
 # final-project-alexc224
-## TABLE OF CONTENTS
-- [What It Is](#what-it-is)
-- [Materials](#materials)
-- [Connections](#connections)
-- [Getting Pi Ready](#getting-pi-ready)
-- [The Code](#the-code)
-## What It Is
+## 📚 TABLE OF CONTENTS
+- [What It Is](#-what-it-is)
+- [Materials](#-materials)
+- [Connections](#-connections)
+- [Getting Pi Ready](#-getting-pi-ready)
+- [The Code](#-the-code)
+## ❓ What It Is
 My final project was a makeshift slot machine that displays numbers on a LED Dot Matrix that is one solid color, the slot machine is started by one button.
 
-## Materials
+## 🧰 Materials
 
 - Raspberry Pi
 - 8x32 MAX7219 LED Dot Matrix (one solid color)
 - Jumper Wires
 - Digital Button
 
-## Connections
+## 🌐 Connections
 1) With jumper wires, Dot Matrix, and your Pi; connect wires to the following:
    - VCC to 5V
    - GND to Ground
@@ -28,14 +28,14 @@ My final project was a makeshift slot machine that displays numbers on a LED Dot
    - G to Ground
    - S to GPIO 21
 
-## Getting Pi Ready
+## 🥧 Getting Pi Ready
 1) If you haven't already, install the ```venv``` program into the folder where the code will be with ```sudo apt install venv```
 2) After installing ```venv```, create a virtual enviorment in the folder with ```python3 -m venv venv```. This should create a folder inside of your folder/directory.
 3) To activate the virtual enviorment run the command ```source venv/bin/activate```. REMEMBER: you need to be in the same directory that you activated the virutal enviorment in.
 4) In the virtual enviorment, install the latest version of the ```luma.led_matrix``` package with ```sudo python3 -m pip install --upgrade luma.led_matrix```
 5) Make sure you have the SPI configured with ```ls -l /dev/spi*``` and it should reply with ```/dev/spidev0.0  /dev/spidev0.1```. If it is not showing that, consult [https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial#spi-on-pi](url) to configure the SPI.
 
-## The Code
+## 💻 The Code
 1) In the same folder that you have the venv package installed, make a python script in the terminal by inputting ```touch slot.py```. You may change the name of the python file, the only thing that is necessary is that you have a python file.
 2) Copy and paste the following code into the file using an editor(such as VsCode or Geany) or the nano tool in the terminal. All notes on the workings of the code should be in the comments:
 
