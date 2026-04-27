@@ -1,11 +1,11 @@
 <a name="top"></a>
 # final-project-alexc224
 ## TABLE OF CONTENTS
-- [What It Is](#-what-it-is)
-- [Materials](#-materials)
-- [Connections](#-connections)
-- [Getting Pi Ready](#-getting-pi-ready)
-- [The Code](#-the-code)
+- [What It Is](#what-it-is)
+- [Materials](#materials)
+- [Connections](#connections)
+- [Getting Pi Ready](#getting-pi-ready)
+- [The Code](#the-code)
 ## What It Is
 My final project was a makeshift slot machine that displays numbers on a LED Dot Matrix that is one solid color, the slot machine is started by one button.
 
