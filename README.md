@@ -17,26 +17,26 @@ My final project was a makeshift slot machine that displays numbers on a LED Dot
 - Digital Button
 
 ## 🌐 Connections
-1) With jumper wires, Dot Matrix, and your Pi; connect wires to the following:
+1) With jumper wires, Dot Matrix, and your Pi, connect wires to the following:
    - VCC to 5V
    - GND to Ground
-   - DIN to MOSI
+   - DIN to MOSI (not to be confused with MISO)
    - CS to CEO
    - CLK to SCLK
-2) With jumper wires, digital button, and the Pi; connect wires to the following:
+2) With jumper wires, digital button, and the Pi, connect wires to the following:
    - V to 5v
    - G to Ground
    - S to GPIO 21
 
 ## 🥧 Getting Pi Ready
-1) If you haven't already, install the ```venv``` program into the folder where the code will be with ```sudo apt install venv```
-2) After installing ```venv```, create a virtual enviorment in the folder with ```python3 -m venv venv```. This should create a folder inside of your folder/directory.
-3) To activate the virtual enviorment run the command ```source venv/bin/activate```. REMEMBER: you need to be in the same directory that you activated the virutal enviorment in.
+1) If you haven't already, install the ```venv``` program into the folder where the code will be with ```sudo apt install venv```. `venv` will be used for a virtual enviorment to avoid complications that could arise if other libraries are installed. 
+2) After installing ```venv```, create a virtual enviorment in the folder with ```python3 -m venv venv```. This should create a new folder inside of the folder that will hold your code.
+3) To activate the virtual enviorment run the command ```source venv/bin/activate```. REMEMBER: you need to be in the same folder that you activated the virutal enviorment in and where your code will be.
 4) In the virtual enviorment, install the latest version of the ```luma.led_matrix``` package with ```sudo python3 -m pip install --upgrade luma.led_matrix```
-5) Make sure you have the SPI configured with ```ls -l /dev/spi*``` and it should reply with ```/dev/spidev0.0  /dev/spidev0.1```. If it is not showing that, consult [this Sparkfun tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial#spi-on-pi) to configure the SPI.
+5) Make sure you have the SPI configured with ```ls -l /dev/spi*``` and it should reply with ```/dev/spidev0.0  /dev/spidev0.1```. If it is not showing that, consult [this Sparkfun tutorial](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial#spi-on-pi) to configure the SPI. SPI is used so that the Pi can communicate with the LED Dot Matrix display.
 
 ## 💻 The Code
-1) In the same folder that you have the venv package installed, make a python script in the terminal by inputting ```touch slot.py```. You may change the name of the python file, the only thing that is necessary is that you have a python file.
+1) In the same folder that you have the venv package installed, make a python script by using the terminal by inputting ```touch slot.py```. You may change the name of the python file, the only thing that is necessary is that you have a python file. You may also need to cd (change directory) intro the folder you need. Ex:`~$ cd Downloads/[any previous folders]/[folder needed]`
 2) Copy and paste the following code into the file using an editor(such as VsCode or Geany) or the nano tool in the terminal. All notes on the workings of the code should be in the comments:
 
 ```python
